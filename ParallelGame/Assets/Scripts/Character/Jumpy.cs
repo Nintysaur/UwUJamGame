@@ -17,7 +17,7 @@ public class Jumpy : TwinCharacterController
 
         if (Input.GetButtonDown("Jump") && onFloor())
         {
-            rb.AddForce(transform.up * 800f);
+            //rb.AddForce(transform.up * 800f);
         }
 
         if (Input.GetKeyDown(KeyCode.Q)) //Swap

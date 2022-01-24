@@ -37,7 +37,7 @@ public class Grabby : TwinCharacterController
     void Grab()
     {
         //Search surroundings for grabbable objects
-        Vector3 searchdimensions = new Vector3(0.2f, 0.5f, 1);
+        Vector3 searchdimensions = new Vector3(2, 5, 1);
         Collider2D search = Physics2D.OverlapBox(transform.position, searchdimensions, 0, grabMask);
         //print("search");
         if (search != null)

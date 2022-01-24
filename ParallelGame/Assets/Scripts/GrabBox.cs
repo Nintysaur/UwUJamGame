@@ -9,7 +9,7 @@ public class GrabBox : MonoBehaviour, IGrabbable
 
     Collider2D myCollider;
 
-    Vector3 followOffset = new Vector3(0,0.2f,0);
+    Vector3 followOffset = new Vector3(0,2.5f,0);
     
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class GrabBox : MonoBehaviour, IGrabbable
         follow = false;
         followTarget = null;
 
-        transform.position -= followOffset;
+        transform.position -= (followOffset - new Vector3(0,0.5f,0));
         myCollider.enabled = true;
     }
 }
