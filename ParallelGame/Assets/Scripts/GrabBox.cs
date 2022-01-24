@@ -25,6 +25,10 @@ public class GrabBox : MonoBehaviour, IGrabbable
             transform.position = followTarget.position + followOffset;
         }
     }
+    public Compatability GetCompatability()
+    {
+        return Compatability.Red;
+    }
 
     public void Grab( GameObject grabber)
     {
@@ -34,13 +38,13 @@ public class GrabBox : MonoBehaviour, IGrabbable
         myCollider.enabled = false;
     }
 
-    public void Drop()
+    public void Drop( Vector3 dropAt )
     {
-        transform.position -= (followOffset - new Vector3(0,0.5f,0) - (followTarget.transform.forward * 1.1f));
+        transform.position = dropAt;
 
         follow = false;
         followTarget = null;
 
         myCollider.enabled = true;
-    }
+    }    
 }
