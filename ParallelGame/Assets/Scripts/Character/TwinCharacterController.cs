@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody))]
 public class TwinCharacterController : MonoBehaviour
@@ -37,5 +38,12 @@ public class TwinCharacterController : MonoBehaviour
         //}
 
         return true;
+    }
+
+    public void HazardContact()
+    {
+        //For now just reset the scene
+        Scene c_scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(c_scene.name);
     }
 }

@@ -36,10 +36,11 @@ public class GrabBox : MonoBehaviour, IGrabbable
 
     public void Drop()
     {
+        transform.position -= (followOffset - new Vector3(0,0.5f,0) - (followTarget.transform.forward * 1.1f));
+
         follow = false;
         followTarget = null;
 
-        transform.position -= (followOffset - new Vector3(0,0.5f,0));
         myCollider.enabled = true;
     }
 }
