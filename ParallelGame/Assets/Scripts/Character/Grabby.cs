@@ -24,7 +24,7 @@ public class Grabby : TwinCharacterController
     {
         HandleInput();
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (grabbed)
             {
