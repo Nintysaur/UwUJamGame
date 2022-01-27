@@ -3593,7 +3593,7 @@ PrefabInstance:
     - target: {fileID: 6814751017225816418, guid: cfb07d7a427ae27488b10d80997c2f15,
         type: 3}
       propertyPath: nextLevel
-      value: Win Screen
+      value: Main Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfb07d7a427ae27488b10d80997c2f15, type: 3}
