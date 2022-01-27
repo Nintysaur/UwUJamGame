@@ -260,10 +260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLateralSpeed: 10
-  _maxRiseSpeed: 15
-  _maxFallSpeed: 15
+  _maxRiseSpeed: 20
+  _maxFallSpeed: 40
   _useGravity: 1
-  _gravity: {x: 0, y: -30, z: 0}
+  _gravity: {x: 0, y: -50, z: 0}
   _slideOnSteepSlope: 0
   _slopeLimit: 45
   _slideGravityMultiplier: 1
@@ -283,13 +283,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 6
   _angularSpeed: 540
-  _acceleration: 70
+  _acceleration: 120
   _deceleration: 70
   _groundFriction: 8
   _useBrakingFriction: 1
   _brakingFriction: 20
   _airFriction: 0
-  _airControl: 0.2
+  _airControl: 1
   _canCrouch: 0
   _standingHeight: 2
   _crouchingHeight: 1
