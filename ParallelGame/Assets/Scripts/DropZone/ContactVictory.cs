@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ContactVictory : MonoBehaviour, IDropAction
 {
@@ -8,6 +9,8 @@ public class ContactVictory : MonoBehaviour, IDropAction
     private bool contact = false;
 
     [SerializeField] private bool startActive;
+
+    [SerializeField] private string nextLevel;
 
     public void OnActionCompleted()
     {
@@ -68,6 +71,7 @@ public class ContactVictory : MonoBehaviour, IDropAction
         if (active && contact)
         {
             print("win");
+            SceneManager.LoadScene(nextLevel);
         }
     }    
 }
